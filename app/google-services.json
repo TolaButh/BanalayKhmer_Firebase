@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "881726175973",
+    "firebase_url": "https://tolacartoon-35652-default-rtdb.firebaseio.com",
+    "project_id": "tolacartoon-35652",
+    "storage_bucket": "tolacartoon-35652.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881726175973:android:45e434ff7e3eda41b1720c",
+        "android_client_info": {
+          "package_name": "book.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881726175973-2s129t3cm5soudjoug5ttpk9g95begfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "book.com",
+            "certificate_hash": "33b8a2f7785077782090204ddf70658785b23afe"
+          }
+        },
+        {
+          "client_id": "881726175973-dan96tslhcqktjsb8kc5joqlrca22ric.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKTvl2x0ojtP8O5uWQgjpLUmEXfpY2CiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881726175973-dan96tslhcqktjsb8kc5joqlrca22ric.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881726175973:android:9a8682499ab4c1bfb1720c",
+        "android_client_info": {
+          "package_name": "tolabuth.CartoonBookRealtime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881726175973-dan96tslhcqktjsb8kc5joqlrca22ric.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKTvl2x0ojtP8O5uWQgjpLUmEXfpY2CiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881726175973-dan96tslhcqktjsb8kc5joqlrca22ric.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881726175973:android:2ea9109409f9dd52b1720c",
+        "android_client_info": {
+          "package_name": "tolabuth.example.banalaybook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881726175973-dan96tslhcqktjsb8kc5joqlrca22ric.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKTvl2x0ojtP8O5uWQgjpLUmEXfpY2CiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881726175973-dan96tslhcqktjsb8kc5joqlrca22ric.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

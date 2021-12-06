@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="8dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="5dp"
+            android:background="#aaa7a7"
+            android:id="@+id/pdfRL01"
+            >
+<!--PDF View book-->
+            <com.github.barteksc.pdfviewer.PDFView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/pdf_admin_icon"
+
+                />
+<!--            Progress Bar-->
+            <ProgressBar
+                android:id="@+id/pro_admin_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_admin_row_Pdf_titel"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/pdfRL01"
+            android:maxLines="1"
+            android:text="Book Title" />
+
+        <TextView
+            android:id="@+id/tv_admin_row_Pdf_description"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/playball"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_admin_row_Pdf_titel"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@id/pdfRL01"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Book Description" />
+
+        <TextView
+            android:id="@+id/tv_admin_row_Pdf_category"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1"
+            android:textSize="8sp"
+            android:text="Category"
+
+            />
+        <TextView
+            android:id="@+id/tv_admin_pdf_size"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:layout_toEndOf="@id/pdfRL01"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1"
+            android:text="13 M"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_admin_pdf_date"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/tv_admin_row_Pdf_category"
+            android:layout_toEndOf="@id/tv_admin_pdf_size"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="12/02/2020"
+
+            />
+
+        <ImageView
+            android:id="@+id/IB_More"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_more" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="8dp"
+
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/rel"
+        android:layout_marginTop="16dp"
+        >
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#aaa7a7"
+            android:gravity="center_horizontal"
+            android:id="@+id/pdfRL01"
+            >
+<!--PDF View book-->
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdf_admin_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+
+                />
+<!--            Progress Bar-->
+            <ProgressBar
+                android:id="@+id/pro_admin_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_admin_row_Pdf_titel"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/rel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:fontFamily="@font/ban"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Book Title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/tv_admin_row_Pdf_description"-->
+<!--            style="@style/TextAppearance.MaterialComponents.Body2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tv_admin_row_Pdf_titel"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_marginBottom="2dp"-->
+
+<!--            android:ellipsize="end"-->
+<!--            android:fontFamily="@font/playball"-->
+<!--            android:maxLines="3"-->
+<!--            android:text="Book Description" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_admin_row_Pdf_category"-->
+<!--            style="@style/TextAppearance.MaterialComponents.Body2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--           android:layout_below="@id/tv_admin_row_Pdf_description"-->
+<!--            android:maxLines="1"-->
+<!--            android:textSize="8sp"-->
+<!--            android:text="Category"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_admin_pdf_size"-->
+<!--            style="@style/TextAppearance.MaterialComponents.Body2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tv_admin_row_Pdf_category"-->
+<!--            android:maxLines="1"-->
+
+<!--            android:text="13 M"-->
+<!--            android:textSize="8sp"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_admin_pdf_date"-->
+<!--            style="@style/TextAppearance.MaterialComponents.Body2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="8sp"-->
+<!--            android:layout_below="@id/tv_admin_pdf_size"-->
+<!--            android:maxLines="1"-->
+<!--            android:layout_marginBottom="3dp"-->
+<!--            android:text="12/02/2020"/>-->
+
+<!--            />-->
+/////////
+<!--        <ImageView-->
+<!--            android:id="@+id/IB_More"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:src="@drawable/ic_baseline_more" />-->
+
+
+
+</androidx.cardview.widget.CardView>

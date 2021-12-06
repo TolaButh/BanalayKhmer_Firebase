@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_banalay02"
+    tools:context=".Activities.DashboardUserActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_dashboardadmin"
+
+        >
+<!--Image of Button in Admin-->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_profile_admin"
+            android:src="@drawable/ic_baseline_person_24"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+
+
+            />
+        <TextView
+            android:id="@+id/tv_dAdmin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Dashboard Admin"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_dAdmin_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dAdmin_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:text="tola@gmail.com"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/Imb_dAdminlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_lounch_power" />
+
+    </RelativeLayout>
+<!--    Search data-->
+    <EditText
+        android:id="@+id/edt_search_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:hint="Search"
+        android:padding="18dp"
+        android:textColorHint="@color/purple_200" />
+<!--    category-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linear_admin"
+        android:layout_below="@id/edt_search_admin"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        tools:listitem="@layout/row_category" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_admin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+
+        android:layout_marginBottom="18dp"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+Add Category"
+            android:layout_weight="1"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/shape_button01"
+            android:minHeight="48dp"
+            android:id="@+id/btn_add_category"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            />
+<!--        Add PDF-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flb_add_pdf"
+            android:src="@drawable/ic_lounch_pdf"
+            android:tint="@color/white"
+            app:fabCustomSize="58dp"
+            android:backgroundTint="@color/purple_200"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

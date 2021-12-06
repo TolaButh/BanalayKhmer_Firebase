@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xml:android="http://schemas.android.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    change background of when selected /unselect tab -->
+    <item android:drawable="@drawable/tab_background_selected"
+        android:state_accelerated="true"/>
+    <item android:drawable="@drawable/tab_background_unselected"/>
+</selector>

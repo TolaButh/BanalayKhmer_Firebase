@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_banalay01"
+    android:padding="20dp"
+    tools:context=".Activities.MainActivity">
+    <ImageView
+        android:id="@+id/icon_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/icon_book04"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Banalay Khmker"
+        android:fontFamily="@font/playball"
+        android:textSize="25dp"
+        android:textColor="#0e15ef"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/icon_main"
+
+        />
+
+    <Button
+        android:id="@+id/btnSkript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_button01"
+        android:fontFamily="@font/ban"
+        android:text="Continue without Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:layout_above="@id/btnSkript"
+        android:textAllCaps="false"
+        android:fontFamily="@font/ban"
+        android:background="@drawable/shape_button"
+        android:textSize="18sp"
+
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProfileActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/banner01"
+        android:layout_marginTop="40dp"
+        />
+<!--Toolbar-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolBar"
+        android:background="@drawable/shape_dashboardadmin"
+        >
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IB_back"
+        android:src="@drawable/ic_baseline_back"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            android:layout_centerInParent="true"
+            android:text="Profile"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_editProfile"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_baseline_edit"
+
+            />
+
+    </RelativeLayout>
+
+    <!--  shape able image view with rounded corners for profile image  -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/shape_profile" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeable_profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        app:shapeAppearance="@style/styleRoundedCornersImage"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shapeable_profile"
+        android:layout_marginTop="10dp"
+        android:text="Full Name"
+        android:layout_centerHorizontal="true"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:id="@+id/tvFullname"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvFullname"
+        android:layout_marginTop="10dp"
+        android:text="tolabuth@gmail.com"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+
+        />
+
+
+
+</RelativeLayout>
